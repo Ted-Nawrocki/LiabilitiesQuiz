@@ -1,0 +1,87 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f5f7;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.quiz-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+#question-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+#question-prompt {
+  white-space: pre-line;
+  margin-top: 1rem;
+}
+
+#options-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-button {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.option-button:hover {
+  background: #f0f0f0;
+}
+
+.option-button.correct {
+  border-color: #1a7f37;
+  background: #e8f5ed;
+}
+
+.option-button.incorrect {
+  border-color: #c62828;
+  background: #fdecea;
+}
+
+.option-button:disabled {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#next-button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #0052cc;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
